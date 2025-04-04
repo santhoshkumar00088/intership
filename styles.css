@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fbc2eb, #a18cd1);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  color: #fff;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+header {
+  margin-bottom: 2rem;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.profile-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-image: url("https://i.pinimg.com/originals/5e/9d/19/5e9d19249a8f96eeb9e65f8298f716cd.png");
+  background-size: cover;
+  background-position: center;
+  border: 4px solid #fff;
+  box-shadow: 0 0 15px #fff, 0 0 30px #ff00cc, 0 0 45px #00f2ff;
+}
+
+.profile-text h1 {
+  font-size: 2.8rem;
+  background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+}
+
+.profile-text p {
+  font-size: 1.1rem;
+  color: #f0f0f0;
+}
+
+main {
+  margin-top: 2rem;
+}
+
+.category {
+  margin-bottom: 2rem;
+}
+
+.category h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  background: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-bottom: 2px solid #ffffff70;
+  padding-bottom: 0.5rem;
+}
+
+.bucket-list {
+  list-style: none;
+}
+
+.bucket-item {
+  background: rgba(255, 255, 255, 0.1);
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0 10px #fff2, 0 0 20px #ffccff33;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.bucket-item:hover {
+  transform: scale(1.02);
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.checkbox {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  color: #fffa;
+}
+
+.item-text {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.item-text.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+footer {
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 3rem;
+  padding-top: 1rem;
+  border-top: 2px dashed #ffffff88;
+  color: #ffffffdd;
+  text-shadow: 0 0 5px #0ff;
+}
